@@ -2,8 +2,8 @@ name: Release
 
 on:
   push:
-#    tags:
-#      - 'v*.*.*'
+    tags:
+      - 'v*.*.*'
 
 jobs:
   build:
@@ -102,9 +102,8 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          name: kubectl-watch-${{ github.ref_name }} ${{ github.actor }}
-          draft: true
-          prerelease: ${{ contains(github.ref, '-') }}
+          name: ${{ github.ref_name }}
+          draft: false
           files: |
             dist/kubectl-watch-*
             dist/checksums.txt
