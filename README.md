@@ -28,7 +28,7 @@ If you want a colorful output, you can install `colordiff` wrapper for `diff` to
     > https://github.com/leopoldxx/kube-watch-diff/releases
 
 2.  Or, install using the installation script:
-    > curl -sfL https://raw.githubusercontent.com/leopoldxx/kube-watch-diff/master/install.sh | sh -s -- -b /usr/bin
+    > curl -sfL https://raw.githubusercontent.com/harveyxia/kube-watch-diff/main/install.sh | sh -s -- -b /usr/bin
 
 # Usage
 
